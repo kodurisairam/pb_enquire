@@ -1,0 +1,42 @@
+<div id="signIn" class="zoom-anim-dialog dialog-box small-dialog">
+    <div class="dialog-box-inner">
+        <div class="popup-title text-center">
+            <h2>Upload Image</h2>
+        </div>
+        <form id="form-signin">
+            <div class="form-group">
+                <h6>Please Crop your image to be uploaded into the system.</h6>
+
+                <div class="form-group text-center">
+                    <button (click)="rotateLeft()">Rotate left</button>
+                    <button (click)="rotateRight()">Rotate right</button>
+                    <button (click)="zoomOut()">Zoom -</button>
+                    <button (click)="zoomIn()">Zoom +</button>
+                    <button (click)="resetImage()">Reset image</button>
+                </div>
+
+                <image-cropper class="image-cropper" [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="true"
+                    [aspectRatio]="8 / 6" [resizeToWidth]="800" [cropperMinWidth]="550" [canvasRotation]="canvasRotation"
+                    [transform]="transform" format="jpeg" (imageCropped)="imageCropped($event)" (imageLoaded)="imageLoaded($event)"
+                    (cropperReady)="cropperReady()" (loadImageFailed)="loadImageFailed()"></image-cropper>
+            </div>
+            <div class="form-group text-center">
+                <h6>Preview of the cropped Image</h6>
+                <img [src]="croppedImage" />
+            </div>
+
+            <div class="form-group text-center form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="markDefault" name="markDefault" value="true" [(ngModel)]="markDefault">
+                    Mark as Default Image
+                </label>
+            </div>
+            <div class="form-group text-center">
+                <button type="button" class="btn btn-primary" (click)="save()">Save</button>
+                <button type="button" class="btn btn-primary" (click)="cancel()">Cancel</button>
+                <div class="clear"></div>
+            </div>
+        </form>
+    </div>
+    <!-- /POPUP BOX INNER END -->
+</div>

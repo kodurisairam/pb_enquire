@@ -1,0 +1,226 @@
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+    <!-- Sidebar Toggle (Topbar) -->
+     
+         <app-header-for-search-properties></app-header-for-search-properties>
+        
+        
+
+     
+    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+        <i class="ri-menu-line"></i>
+    </button>
+    <!-- Topbar Search -->
+    <!-- <form
+        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+        <div class="input-group">
+            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                aria-label="Search" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                    <i class="ri-search-line"></i>
+                </button>
+            </div>
+        </div>
+    </form> -->
+
+    <!-- Topbar Navbar -->
+    <ul class="navbar-nav ml-auto">
+
+        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+        <li class="nav-item dropdown no-arrow d-sm-none">
+            <a class="nav-link dropdown-toggle" id="searchDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="ri-search-line"></i>
+            </a>
+            <!-- Dropdown - Messages -->
+            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-light border-0 small"
+                            placeholder="Search for..." aria-label="Search"
+                            aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">
+                                <i class="fas fa-search fa-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </li>
+        <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" id="messagesDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <!-- <i class="ri-question-line"></i> -->
+                <!-- Counter - Messages -->
+                <!-- <span class="badge badge-danger badge-counter">7</span> -->
+            </a>
+            <!-- Dropdown - Messages -->
+            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                    Message Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center">
+                    <div class="dropdown-list-image mr-3">
+                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                            alt="...">
+                        <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div class="font-weight-bold">
+                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                            problem I've been having.</div>
+                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                    </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center">
+                    <div class="dropdown-list-image mr-3">
+                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                            alt="...">
+                        <div class="status-indicator"></div>
+                    </div>
+                    <div>
+                        <div class="text-truncate">I have the photos that you ordered last month, how
+                            would you like them sent to you?</div>
+                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                    </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center">
+                    <div class="dropdown-list-image mr-3">
+                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                            alt="...">
+                    </div>
+                    <div>
+                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                            the progress so far, keep up the good work!</div>
+                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                    </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center">
+                    <div class="dropdown-list-image mr-3">
+                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                            alt="...">
+                        <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div>
+                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                            told me that people say this to all dogs, even if they aren't good...</div>
+                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                    </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500">Read More Messages</a>
+            </div>
+        </li>
+        <!-- Nav Item - Alerts -->
+        <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" id="alertsDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <!-- <i class="ri-notification-line"></i> -->
+                <!-- Counter - Alerts -->
+                <!-- <span class="badge badge-danger badge-counter">3+</span> -->
+            </a>
+            <!-- Dropdown - Alerts -->
+            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                    Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center">
+                    <div class="mr-3">
+                        <div class="icon-circle bg-primary">
+                            <i class="ri-file-list-line text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="small text-gray-500">December 12, 2019</div>
+                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                    </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center">
+                    <div class="mr-3">
+                        <div class="icon-circle bg-success">
+                            <i class="ri-hand-coin-line text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="small text-gray-500">December 7, 2019</div>
+                        $290.29 has been deposited into your account!
+                    </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center">
+                    <div class="mr-3">
+                        <div class="icon-circle bg-warning">
+                            <i class="ri-error-warning-line text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="small text-gray-500">December 2, 2019</div>
+                        Spending Alert: We've noticed unusually high spending for your account.
+                    </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500">Show All Alerts</a>
+            </div>
+        </li>
+
+        <div class="topbar-divider d-none d-sm-block"></div>
+
+        <!-- Nav Item - User Information -->
+        <li class="nav-item dropdown no-arrow" [ngClass]="{'show':visibleDropdown}" *ngIf="lookupModel.getLoggedUser()">
+            <a class="nav-link dropdown-toggle" id="userDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="profileDropdown()">
+                <img class="img-profile rounded-circle mr-2"
+                    src="assets/img/user.png">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{lookupModel.getLoggedUser().personalDetails.firstName}} <i class="ri-arrow-down-s-line"></i><br><small>Associate</small></span>
+            </a>
+            <!-- Dropdown - User Information -->
+            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" [ngClass]="{'show':visibleDropdown}"
+                aria-labelledby="userDropdown">
+                <a class="dropdown-item" (click)="profile()" >
+                    <i class="ri-user-line"></i>
+                    My Profile
+                </a>
+                <a class="dropdown-item" (click)="favoriteListing()">
+                    <i class="ri-heart-3-line"></i> 
+                 Favorite listings
+                </a>
+                <a class="dropdown-item" (click)="favoriteProjects()">
+                    <i class="ri-heart-3-line"></i>
+                    Favorite Projects
+                    
+                </a>
+                <a class="dropdown-item" (click)="favoritePgHostels()">
+                    <i class="ri-heart-3-line"></i>
+                    Favorite Pg/Hostels
+                </a>
+                <a class="dropdown-item" (click)="getLeadsForProperties()">
+                    <!-- <i class="ri-settings-2-line"></i> -->
+                    <img src="assets/img/leadicon.png" style="width: 20px; height: auto;">
+                    Property Leads
+                </a>
+                <a class="dropdown-item" (click)="getLeadsForProjects()">
+                    <img src="assets/img/leadicon.png" style="width: 20px; height: auto;">
+                    Project Leads
+                </a>
+                <a class="dropdown-item" (click)="getLeadsForPgHostels()">
+                    <img src="assets/img/leadicon.png" style="width: 20px; height: auto;">
+                    Pg/Hostels Leads
+                </a>
+                <!-- <a class="dropdown-item" (click)="myfavorites()">
+                    <i class="ri-settings-2-line"></i>
+                    My Favorites
+                </a> -->
+                <a class="dropdown-item" (click)="changepwd()">
+                    <img src="assets/img/changepwdicon.png" style="width: 20px; height: auto;">
+                    
+                    Change Password
+                </a>
+                <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" (click)="logout()" >
+                    <i class="ri-logout-box-line"></i>
+                    Logout
+                </a>
+            </div>
+        </li>
+    </ul>
+</nav>

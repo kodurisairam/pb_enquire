@@ -1,0 +1,29 @@
+<div id="signIn" class="zoom-anim-dialog dialog-box small-dialog">
+  <div class="dialog-box-inner">
+    <div class="popup-title">
+      <h2>Upload Progress</h2>
+    </div>
+    <form id="form-signin">
+      <p *ngIf="error" style="color:red;" id="emailexists">Error in uploading the file. Please try again.</p>
+      <div class="form-group">
+        <div class="progress" *ngIf="progress !== 100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" [ngStyle]="{'width': progress + '%'}"
+            aria-valuenow="progress" aria-valuemin="0" aria-valuemax="100">{{progress}}%</div>
+        </div>
+        <div class="progress" *ngIf="progress === 100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 100%"
+            aria-valuenow="progress" aria-valuemin="0" aria-valuemax="100">100%</div>
+        </div>
+      </div>
+      <p class="text-center" *ngIf="fileSize">File Size :
+        <span>{{fileSize}}</span>
+      </p>
+      <div class="form-group text-center">
+        <button type="button" class="btn btn-primary" *ngIf="progress !== 100" (click)="cancel()">Cancel</button>
+        <button type="button" class="btn btn-primary" *ngIf="error" (click)="close()">Close</button>
+        <div class="clear"></div>
+      </div>
+    </form>
+  </div>
+  <!-- /POPUP BOX INNER END -->
+</div>

@@ -1,0 +1,16 @@
+<div id="signIn" class="zoom-anim-dialog dialog-box small-dialog">
+    <div class="dialog-box-inner">
+        <div class="popup-title">
+            <h5>{{modalDetails.title}}</h5>
+        </div>
+        <form id="form-signin">
+            <p class="text-center">{{modalDetails.message}}</p>
+            <div class="form-group text-center">
+                <button type="button" class="btn btn-primary" (click)="confirm()">Confirm</button>
+                <button type="button" class="btn btn-secondary" (click)="close()">Cancel</button>
+                <div class="clear"></div>
+            </div>
+        </form>
+    </div>
+    <!-- /POPUP BOX INNER END -->
+</div>

@@ -1,0 +1,7 @@
+.dialog-box-inner {
+    padding: 10px;
+}
+form {
+    max-height: 600px;
+    overflow: auto;
+}

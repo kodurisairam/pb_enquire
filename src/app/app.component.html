@@ -1,0 +1,18 @@
+<div id="wrapper">
+    <!-- <share-buttons [theme]="'material-dark'" [include]="['whatsapp']" [show]="1" [size]="1" [url]="'https://pillarblocks.com'" [autoSetMeta]="false"></share-buttons> -->
+    <rsb-sidebar *ngIf="!hideMainSidebar && !hideSidebar && !hidePropertyBar && !hidePgBar && !hideRentBar && !hideHeaderNavForLogin"></rsb-sidebar>
+    <app-company-sidebar *ngIf="hideMainSidebar"></app-company-sidebar>
+    <app-project-sidebar *ngIf="hideSidebar"></app-project-sidebar>
+    <app-propertysidebar *ngIf="hidePropertyBar"></app-propertysidebar>
+    <app-pg-sidebar *ngIf="hidePgBar"></app-pg-sidebar>
+    <app-rent-sidebar *ngIf="hideRentBar"></app-rent-sidebar>
+    <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+            <rsb-header *ngIf="!hideHeaderNavForSearchPropInAssociate && !hideHeaderNavForLogin"></rsb-header>
+            <router-outlet></router-outlet>
+        </div>
+        <rsb-footer></rsb-footer>
+    </div>
+    <rsb-spinner></rsb-spinner>
+
+</div>

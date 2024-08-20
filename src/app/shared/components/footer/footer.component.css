@@ -1,0 +1,13 @@
+.socialicons  {
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 26px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+}
+ a.facebook {
+    background-color: #4268b1;
+}

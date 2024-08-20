@@ -1,0 +1,14 @@
+<ng-container *ngIf="showHeaderForRentSearch || showHeaderForProjectSearch || showHeaderForPgHostelsSearch">
+<ul class="nav nav-tabs searchtablist" id="searchTab" role="tablist">
+  <li class="nav-item" role="presentation" *ngFor="let module of lookupModel.getModuleList();">
+    <button  class="nav-link" [ngClass]="{'active': selectedModuleId === module.moduleId}" 
+    (click)="selectModule(module)"> 
+    <i [ngClass]="getIcon(module.moduleName)" (click)=" backToSearchProp()"></i>
+    <b (click)=" backToSearchProp()">{{ module.moduleName }}</b>
+  </button>
+
+
+  </li>
+
+</ul>
+</ng-container>

@@ -1,0 +1,15 @@
+.bg-success {
+    background-color: #28a745!important;
+}
+.bg-warning {
+    background-color: #ffc107!important;
+}
+.progress-bar-animated {
+    animation: progress-bar-stripes 1s linear infinite;
+}
+button + button {
+    margin-left: 5px;
+}
+#signIn {
+    padding: 15px;
+}

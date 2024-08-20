@@ -1,0 +1,20 @@
+.side-nav-width {
+    width: 250px;
+}
+/* .dropdown-menu {
+    height: auto;
+    overflow: auto;
+} */
+.module-select {
+    height: 45px;
+}
+.sidenav .closebtn {
+    right: 20px;
+}
+.dropdown-menu {
+    display: none; 
+}
+
+.dropdown-menu.show {
+    display: block; 
+}

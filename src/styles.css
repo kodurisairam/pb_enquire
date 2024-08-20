@@ -1,0 +1,8 @@
+/* styles.css (or styles.scss) */
+@import '~ngx-toastr/toastr.css';
+@import "~remixicon/fonts/remixicon.css";
+
+
+rsb-sidebar {
+    background: #0167cc;
+}
