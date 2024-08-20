@@ -14,8 +14,6 @@ export class CommonService {
       const contentType = file.type;
       const bucket = new S3(
         {
-          accessKeyId: 'AKIAV2TWAWZYHGR6BLVR',
-          secretAccessKey: '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',
           region:'ap-south-1'
         }
       );
